@@ -1,3 +1,6 @@
+# These are the notes I am referring to to review my Spark lessons , code compiled in a docker container. Shows few functions in spark and displays the result.
+
+
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, StringType
 from pyspark.sql.functions import col,lit
