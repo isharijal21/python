@@ -1,3 +1,6 @@
+# These are the notes I am referring to to review my Spark lessons , code compiled in a docker container. Shows few functions in spark and displays the result.
+
+
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, StringType
 from pyspark.sql.functions import col,lit
@@ -70,7 +73,7 @@ if __name__ == "__main__":
 
         df2 = spark.createDataFrame(data=data, schema=schema)
         df2.printSchema()
-        df2.show(truncate=False)
+        df2.show(truncate=False)  # shows all columns
         df2.select("name").show(truncate=False)
 
         #particular column filter
